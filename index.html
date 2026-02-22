@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dreamy Pink Profile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Clouds -->
+  <div class="clouds">
+    <img src="https://i.imgur.com/8QfQpYg.png" class="cloud cloud1">
+    <img src="https://i.imgur.com/8QfQpYg.png" class="cloud cloud2">
+    <img src="https://i.imgur.com/8QfQpYg.png" class="cloud cloud3">
+  </div>
+
+  <!-- Floating Hearts -->
+  <div class="hearts"></div>
+
+  <div class="app">
+    <header class="topbar">
+      <h1>🌸 Dreamy Profile</h1>
+      <span id="timestamp"></span>
+    </header>
+
+    <!-- ===== AVATAR & PROFILE ===== -->
+    <section class="profile">
+      <div class="avatar-wrapper heartbeat">
+        <!-- 👇 ĐỔI LINK AVATAR Ở ĐÂY -->
+        <img 
+          id="avatar" 
+          src="avatar.jpg" 
+          alt="avatar"
+        />
+        <div class="avatar-decoration"></div>
+      </div>
+
+      <div class="info">
+        <h2 id="username">Khánh Duy</h2>
+        <p id="bio">Trái tim dễ rung động 💗</p>
+        <p id="status">💭 Đang nhớ ai đó...</p>
+      </div>
+    </section>
+
+    <section class="poem-box">
+      <h3>📜 Thơ hôm nay</h3>
+      <p id="poem">Loading poem...</p>
+    </section>
+
+    <section class="stats">
+      <div class="card">
+        <h3>Mood</h3>
+        <select id="mood">
+          <option value="love">💖 Đang yêu</option>
+          <option value="miss">💭 Nhớ ai đó</option>
+          <option value="sad">🌧 Hơi buồn</option>
+          <option value="ok">😎 Ổn áp</option>
+        </select>
+      </div>
+
+      <div class="card">
+        <h3>Heartbeat</h3>
+        <span id="heartbeat-time">0s ago</span>
+      </div>
+    </section>
+  </div>
+
+  <!-- Music -->
+  <audio id="bg-music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+  <button id="music-toggle" class="music-btn">🎵</button>
+
+  <script src="poems.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
